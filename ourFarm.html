@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Our Farm</title>
+
+    													<!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  														<!-- Social Icons -->
+   <link href="bootstrap-social/bootstrap-social.css" rel="stylesheet">
+   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+   															<!-- CSS -->
+  
+   															<!-- Google Fonts -->
+   <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet'>
+   <link href='https://fonts.googleapis.com/css?family=Fresca' rel='stylesheet'>
+   <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+   <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lemonada' rel='stylesheet'>
+    <style>
+    .navbar {
+    margin-bottom: 0;
+    background-color: #1bb2e9;
+    z-index: 9999;
+    border: 0;
+    font-size: 14px !important;
+    line-height: 1.42857143 !important;
+   
+    border-radius: 0;
+    font-family:Times New Roman;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #1bb2e9 !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+.dropdown-menu{
+	background-color: #1bb2e9;
+	
+}
+.navbar-brand {
+  padding:0px;
+}
+.navbar-brand>img {
+  height: 290%;
+  width: auto;
+}
+												/*Modal*/
+													
+#myTab{
+	color: pink;
+}										
+.form-horizontal1{
+	padding: 20px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 15px 0 rgba(0,0,0,0.12) !important;
+}
+.btn{
+	border-radius: 0px;
+}
+.form-control{
+	border-radius: 0px;
+	margin-bottom: 10px;
+}
+p{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	text-align: center;
+	color: pin;
+}
+.container2 {
+	font-family:Sofia;
+	font-size:1.4em;
+	color: #2C3539;
+}
+
+.container5{
+	color: white;
+	font-family:fresca;
+	background-color:#1bb2e9;
+}
+.container5 ul {
+list-style-type: none;
+color: white;
+}
+.container5 a {
+	color: white;
+	text-align:justify;
+	padding: 5px;
+	font-family:fresca;
+}
+.page-header h1{
+text-align:  center;
+color: #1bb2e9;
+font-size:5em;
+font-weight: lighter;
+font-family: Times New Roman;
+}
+						
+    
+    </style>
+
+
+
+</head>
+<body>
+			
+    										<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    													
+													<!-- Header -->
+													
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"><img alt="" src="images/logo.png" class=""></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right" style="margin-top: 20px;" >
+      	<li ><a href="index.html">HOME</a></li>
+        <li><a href="aboutUs.html">ABOUT US</a></li>
+        <li><a href="ourMilk.html">OUR MILK</a></li>
+        <li class="active"><a href="ourFarm.html">OUR FARM</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">RECIPES <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            		<li><a href="badamKheer.html">Badam Kheer</a></li>
+					<li><a href="milkshake.html">Milkshake</a></li>
+					<li><a href="caramelCustard.html"> Caramel Custard</a></li>
+					<li><a href="waffle.html">Waffle</a></li>
+					<li><a href="brownie.html">Brownie</a></li>
+					<li><a href="kiwiSmoothie.html">Kiwi Smoothie</a></li>
+         </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-phone"></span>DOWNLOAD APP</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
+        <li><a href="#"data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span> SIGN UP</a></li>
+        </ul>
+        
+        
+																<!-- Modal -->
+																																
+<div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        <br>
+      <div class="modal-body">
+        <div id="myTabContent" class="tab-content">
+        	
+       	 										<!-- Sign Up Form -->
+        	<div class="tab-pane active in" id="signup">
+            	<form class="form-horizontal1">
+            		<fieldset>
+            			 <div class="control-group">
+              				<label class="control-label" for="Email">Email:</label>
+              				<div class="controls">
+                			<input id="Email" name="Email" class="form-control" type="text" placeholder="JoeSixpack@sixpacksrus.com" class="input-large" required="">
+              				</div>
+            			 </div>
+            
+           		       	<div class="control-group">
+              				<label class="control-label" for="userid">Alias:</label>
+              				<div class="controls">
+                	    	<input id="userid" name="userid" class="form-control" type="text" placeholder="JoeSixpack" class="input-large" required="">
+              				</div>
+            			</div>
+            			<div class="control-group">
+              				<label class="control-label" for="password">Password:</label>
+              				<div class="controls">
+                			<input id="password" name="password" class="form-control" type="password" placeholder="********" class="input-large" required="">
+                			<em>1-8 Characters</em>
+              				</div>
+            			</div>
+            			<div class="control-group">
+              				<label class="control-label" for="reenterpassword">Re-Enter Password:</label>
+              				<div class="controls">
+                			<input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="********" class="input-large" required="">
+              				</div>
+            			</div>
+            			<br>
+            			<div class="control-group">
+              				<label class="control-label" for="humancheck">Humanity Check:</label>
+              				<div class="controls">
+                			<label class="radio inline" for="humancheck-0">
+                  			<input type="radio" name="humancheck" id="humancheck-0" value="robot" checked="checked">I'm a Robot</label>
+                			<label class="radio inline" for="humancheck-1">
+                  			<input type="radio" name="humancheck" id="humancheck-1" value="human">I'm Human</label>
+              				</div>
+            			</div>
+            			<div class="control-group">
+              				<label class="control-label" for="confirmsignup"></label>
+              				<div class="controls">
+                			<button id="confirmsignup" name="confirmsignup" class="btn btn-success">Sign Up</button><br><br>
+              				</div>
+							<a class="btn btn-social-icon btn-twitter">
+    						<span class="fa fa-twitter"></span>
+  							</a>
+  							<a class="btn btn-social-icon btn-facebook">
+    						<span class="fa fa-facebook"></span>
+  							</a>
+  							<a class="btn btn-social-icon btn-google">
+    						<span class="fa fa-google"></span>
+  							</a>
+  							<a class="btn btn-social-icon btn-instagram">
+    						<span class="fa fa-instagram"></span>
+  							</a>
+  							<a class="btn btn-social-icon btn-pinterest">
+    						<span class="fa fa-pinterest"></span>
+  							</a>
+              			</div>
+            		</fieldset>
+            	</form>
+      		</div>
+      						<div class="modal-footer">
+        						<button type="button" class="btn btn-default"  data-dismiss="modal" >Close</button>
+        					</div>
+      			</div>
+  			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</nav>		<br><br><br>
+										<!-- OUR FARM -->
+
+<div class="container">
+  <div class="page-header">
+    <h1>OUR FARM</h1>     
+  </div> 
+</div>  
+<div class="container2">
+  <div class="row">
+    <div class="col-sm-8">
+      <p>
+      	Our facility includes  5  acres farm and  a herb of cows.
+		The cows are fed with high qualited food , 
+		good shed  and we als ensure that dairy cows are comfortable and managed in an environment to improve their health and prevent diseases.
+		India is home to the world&#39;s largest dairy herd, with numbers continuing to grow. 
+		An ever increasing demand for milk, is pushing productivity, with dairy cattle being forced to produce milk in unnatural and highly stressful situations.
+		The characteristics of a cow inherited from its father or mother.
+		 The quality of cow can be high but it will not produce highly if they aren&#39;t managed well.
+		  Keeping the cows and their house clean daily, comfortable shelter, regular food supply, proper breeding,
+		   disease prevention and  management is the issue to improve dairy farming.
+      </p>
+    </div>
+    <div class="col-sm-4">
+    	<img class="img-responsive" src="images/rmFarm.jpg">
+    </div>
+  </div>
+</div>
+											<!-- DIET OF COWS -->
+											
+<div class="container">
+  <div class="page-header">
+    <h1>DIET OF COWS</h1>     
+  </div> 
+</div>  											
+<div class="container2">
+    <p>Our cows get a planned, wholesome meal every day,
+		 with our specially grown high quality alfalfa, 
+		 pennisetum, greens, soya and bran.
+		  Our nutritionists ensure the right balance of minerals and vitamins and customised menu plans. 
+		  The menu is also updated at regular intervals to include fresh seasonal crops.
+		   This total Meal Ration is designed to keep cows at the pinnacle of health,
+		    with one purpose in mind: the production of nutritive , wholesome milk that is naturally full of goodness
+	
+    	
+    
+    </p>     
+  </div> 
+
+  
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-2">
+      <img src="images/alfalfa.jpg" class="img-responsive center-mobile" style="border-radius: 50%; width: 150px; height: 150px;"  alt="Image">
+    </div>
+    <div class="col-sm-2"> 
+      <img src="images/bran.jpg" class="img-responsive center-mobile" style="border-radius: 50%; width: 150px; height: 150px;" alt="Image">
+    </div>
+    <div class="col-sm-2"> 
+      <img src="images/grazing.jpg" class="img-responsive center-mobile "style="border-radius: 50%; width: 150px; height: 150px;" alt="Image">
+    </div>
+    <div class="col-sm-2">
+      <img src="images/Grass.jpg" class="img-responsive center-mobile" style="border-radius: 50%; width: 150px; height: 150px;" alt="Image">
+    </div>
+    <div class="col-sm-2">
+      <img src="images/Corn.jpg" class="img-responsive center-mobile" style="border-radius: 50%; width: 150px; height: 150px;" alt="Image">
+    </div>
+    <div class="col-sm-2">
+      <img src="images/wheat.jpg" class="img-responsive center-mobile" style="border-radius: 50%; width: 150px; height: 150px;" alt="Image">
+    </div>
+  </div>
+</div><br>
+<div class="container">
+  <div class="page-header">
+    <h1>IMAGE GALLERY</h1>
+    </div>
+</div>
+
+										<!-- CAROUSEL -->
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+    </ol>
+					<!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/mySlide1.jpg"  style="width:100%; height:550px;">
+    </div>
+
+      <div class="item">
+        <img src="images/mySlide2.jpg"  style="width:100%;height:550px;">
+      </div>
+    
+      <div class="item">
+        <img src="images/mySlide3.jpg" alt="New York" style="width:100%;height:550px;">
+      </div>
+     
+      <div class="item">
+        <img src="images/mySlide4.jpg" alt="New York" style="width:100%;height:550px;">
+      </div>
+     
+      <div class="item">
+        <img src="images/mySlide5.jpg" alt="New York" style="width:100%;height:550px;">
+      </div>
+     
+      <div class="item">
+        <img src="images/mySlide6.jpg" alt="New York" style="width:100%;height:550px;">
+      </div>
+     </div>
+     
+					<!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+														<!-- FOOTER -->
+<footer class="container5">
+ <div class="row"><br><br>
+ 	<div class="col-sm-1"></div>
+    <div class="col-sm-3">
+    	<ul>
+	 		<li><a href="index.html" target="__parent" title="Home">Home</a></li>
+ 			<li><a href="aboutUs.html" target="__parent" title="About Us">About Us</a></li>
+ 			<li><a href="ourMilk.html" target="__parent" title="Our Milk">Our Milk</a></li>
+ 		</ul>
+    </div>
+    <div class="col-sm-3">
+    	 <ul>
+            <li><a href="ourFarm.html" target="__parent" title="Our Farm">Our Farm</a></li>
+            <li><a href="recipes.html" target="__parent" title="Recipes">Recipes</a></li>
+            <li><a href="blog.html" target="__parent" title="Blog">Delivery Rooms</a></li>
+        </ul>
+    </div>
+    <div class="col-sm-4" >
+    	<h3>STAY CONNECTED</h3>
+    	<div class="form-group"><input class="form-control" id="email" name="email" placeholder="Email" type="email" required></div>
+    </div>
+    <div class="col-sm-1"> </div>
+  </div>
+  <div class="row">
+  	<div class="col-sm-1">
+    </div>
+    <div class="col-sm-10"><hr>
+    </div>
+    <div class="col-sm-1">
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-sm-3">
+  </div>
+  <div class="col-sm-6 text-center " style="padding:20px;color: white;">
+  	<i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i>
+    <i class="fa fa-twitter fa-2x fa-fw" aria-hidden="true"></i>
+    <i class="fa fa-instagram fa-2x fa-fw" aria-hidden="true"></i>
+    <i class="fa fa-map-marker fa-2x fa-fw" aria-hidden="true"></i>
+    <i class="fa fa-pinterest-square fa-2x fa-fw" aria-hidden="true"></i>
+  </div>
+  <div class="col-sm-3">
+
+  </div>	
+  </div>
+  <div class="row">
+  <div class="col-sm-12">
+  	<p>COPYWRITE&copy;2017 .VINTAGE PASTURE</p>
+  </div>
+  </div>
+</footer>
+										
+											
+
+	
+</body>
+</html>
