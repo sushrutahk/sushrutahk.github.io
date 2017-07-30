@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Download App</title>
+    <link rel="icon" href="images\logo.ico">
 
     													<!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,6 +29,7 @@
    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Lemonada' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Julee' rel='stylesheet'>
     <style>
     .navbar {
     margin-bottom: 0;
@@ -88,7 +90,22 @@ p{
 	color: pin;
 }
 
-
+.container6{
+background-image:url("images/downloadApp.jpg");
+}
+.container1 h1{
+font-family: Julee;
+font-size:70px;
+text-align: center;
+color: white;
+padding-top: 100px;
+}
+.container1 p{
+font-family: Lemonada;
+font-size:50px;
+text-align: center;
+color: white;
+}
 .container5{
 	color: white;
 	font-family:fresca;
@@ -104,7 +121,99 @@ color: white;
 	padding: 5px;
 	font-family:fresca;
 }
-						
+/*
+.android-btn:hover{
+background-color: #272727;
+}
+
+.android-btn i{
+font-size: 55px;
+}
+
+.android-btn .btn-text{
+margin-top: 0px;
+}
+
+.android-btn strong{
+font-size: 25px;
+text-shadow: none;
+color: #fff;
+line-height: 24px;
+}
+
+.windows-btn{
+background-color:#008A00;
+width: 235px;
+padding: 13px 5px 13px 10px;
+border-color: #055805;
+}
+
+.windows-btn:hover{
+background-color: #008A00;
+}
+.windows-btn .btn-text{
+text-shadow: none;
+font-size: 26px;
+line-height: 25px;
+}
+
+*/	
+.btn-app-store{
+    background: black;
+	color: white;
+	position: relative;
+	height: 60px;
+	padding-left: 55px;
+	padding-right: 20px;
+}
+.btn-app-store i{
+	font-size: 40px;
+	position: absolute;
+	left: 10px;
+}
+.btn-app-store .small{
+	display: block;
+	font-size: 12px;
+	line-height: 12px;
+	margin-bottom: 2px;
+    margin-top: 5px;
+}
+.btn-app-store .big{
+	display: block;
+	text-align: left;
+	font-size: 21px;
+	line-height: 21px;
+}
+
+
+
+
+.btn-play-store{
+    background: black;
+	color: white;
+	position: relative;
+	height: 60px;
+	padding-left: 55px;
+	padding-right: 20px;
+}
+.btn-play-store i{
+	font-size: 40px;
+	position: absolute;
+	left: 10px;
+}
+.btn-play-store .small{
+	display: block;
+	font-size: 12px;
+	line-height: 12px;
+	margin-bottom: 2px;
+    margin-top: 5px;
+}
+.btn-play-store .big{
+	display: block;
+	text-align: left;
+	font-size: 21px;
+	line-height: 21px;
+}									
     
     </style>
    															
@@ -131,7 +240,7 @@ color: white;
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right" style="margin-top: 20px;" >
-      	<li class="active"><a href="index.html">HOME</a></li>
+      	<li ><a href="index.html">HOME</a></li>
         <li><a href="aboutUs.html">ABOUT US</a></li>
         <li><a href="ourMilk.html">OUR MILK</a></li>
         <li><a href="ourFarm.html">OUR FARM</a></li>
@@ -146,7 +255,7 @@ color: white;
 					<li><a href="kiwiSmoothie.html">Kiwi Smoothie</a></li>
          </ul>
         </li>
-        <li><a href="#"><span class="glyphicon glyphicon-phone"></span>DOWNLOAD APP</a></li>
+        <li class="active"><a href="downloadApp.html"><span class="glyphicon glyphicon-phone"></span>DOWNLOAD APP</a></li>
         <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
         <li><a href="#"data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span> SIGN UP</a></li>
         </ul>
@@ -235,4 +344,94 @@ color: white;
 </div>
 </div>
 </div>
-</nav>		
+</nav><br><br>
+<div class="container6">
+<div class=" container1">
+	<h1>Don't have an App?</h1>
+	<p>Download here</p>
+</div>		
+<div class="row">
+        <div class="col-md-7"></div>
+        <div class="col-md-5" style="margin-top:200px; margin-bottom:250px;">
+           <!-- apple store button -->
+           		<h1 style="font-family:Chewy;color: white;">Give a missed call to download the App<br>9790502642</h1>
+                <a href="#" class="btn btn-app-store">
+                <i class="fa fa-apple"></i> 
+                <span class="small">Download on the</span> 
+                <span class="big">App Store</span></a>
+                
+                
+                <a href="#" class="btn btn-play-store">
+                <i class="fa fa-android"></i> 
+                <span class="small">Get it on</span> 
+                <span class="big">Play Store</span></a>
+                
+
+            <!-- android button --><!--  
+  				<a class="btn btn-lg btn-success big-btn android-btn" href="#">
+  				<img width="80px" class="pull-left" src="http://www.userlogos.org/files/logos/jumpordie/google_play_04.png"><div class="btn-text"><small>Available on</small><br><strong>Google Play</strong></div></a>
+            <!-- windows store button --><!-- 
+                <a class="btn btn-lg btn-success big-btn windows-btn" href="#">
+  				<img width="60px" class="pull-left" src="http://1.bp.blogspot.com/-rD2_M6Vvv6w/UbmywLq5V8I/AAAAAAAACko/BEcR4QqtkRI/s1600/Windows%2BStore%2BLogo.png"><div class="btn-text">Windows<br>Store</div></a>
+                   
+            -->
+        </div>
+    </div>
+</div>
+
+
+					
+
+													<!-- FOOTER -->
+<footer class="container5">
+ <div class="row"><br><br>
+ 	<div class="col-sm-1"></div>
+    <div class="col-sm-3">
+    	<ul>
+	 		<li><a href="index.html" target="__parent" title="Home">Home</a></li>
+ 			<li><a href="aboutUs.html" target="__parent" title="About Us">About Us</a></li>
+ 			<li><a href="ourMilk.html" target="__parent" title="Our Milk">Our Milk</a></li>
+ 		</ul>
+    </div>
+    <div class="col-sm-3">
+    	 <ul>
+            <li><a href="ourFarm.html" target="__parent" title="Our Farm">Our Farm</a></li>
+            <li><a href="recipes.html" target="__parent" title="Recipes">Recipes</a></li>
+            <li><a href="blog.html" target="__parent" title="Blog">Delivery Rooms</a></li>
+        </ul>
+    </div>
+    <div class="col-sm-4" >
+    	<h3>STAY CONNECTED</h3>
+    	<div class="form-group"><input class="form-control" id="email" name="email" placeholder="Email" type="email" required></div>
+    </div>
+    <div class="col-sm-1"> </div>
+  </div>
+  <div class="row">
+  	<div class="col-sm-1">
+    </div>
+    <div class="col-sm-10"><hr>
+    </div>
+    <div class="col-sm-1">
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-sm-3">
+  </div>
+  <div class="col-sm-6 text-center " style="padding:20px;color: white;">
+  	<i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i>
+    <i class="fa fa-twitter fa-2x fa-fw" aria-hidden="true"></i>
+    <i class="fa fa-instagram fa-2x fa-fw" aria-hidden="true"></i>
+    <i class="fa fa-map-marker fa-2x fa-fw" aria-hidden="true"></i>
+    <i class="fa fa-pinterest-square fa-2x fa-fw" aria-hidden="true"></i>
+  </div>
+  <div class="col-sm-3">
+
+  </div>	
+  </div>
+  <div class="row">
+  <div class="col-sm-12">
+  	<p>COPYWRITE&copy;2017 .VINTAGE PASTURE</p>
+  </div>
+  </div>
+</footer>
+										
